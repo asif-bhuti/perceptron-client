@@ -14,34 +14,22 @@ export const Navbar = () => {
           />
         </NavLink>
         <ul className="flex justify-end w-1/2 items-center">
-          <NavLink
-            to={"/"}
-            className="text-[20px] font-montserrat text-primary-100 m-4"
-          >
+          <NavLink to={"/"} className="nav-link">
             Home
           </NavLink>
-          <NavLink
-            to={"services"}
-            className="text-[20px] font-montserrat text-primary-100 m-4"
-          >
+          <NavLink to={"services"} className="nav-link">
             Services
           </NavLink>
-          <NavLink
-            to={"projects"}
-            className="text-[20px] font-montserrat text-primary-100 m-4"
-          >
+          <NavLink to={"projects"} className="nav-link">
             Projects
           </NavLink>
-          <NavLink
-            to={"pricing"}
-            className="text-[20px] font-montserrat text-primary-100 m-4"
-          >
+          <NavLink to={"pricing"} className="nav-link">
             Pricing
           </NavLink>
           <Button>
             <NavLink
               to={"contact"}
-              className="text-[20px] font-montserrat text-primary-100 m-4"
+              className="font-montserrat text-primary-100"
             >
               Contact
             </NavLink>

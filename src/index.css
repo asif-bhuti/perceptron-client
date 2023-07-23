@@ -7,8 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* index.css */
-/* index.css */
+@layer components {
+  .nav-link {
+    @apply text-xl font-montserrat text-primary-100 m-4;
+  }
+}
+
 @keyframes rotateAndFloat {
   0% {
     transform: rotate(0) translateY(-50px);
