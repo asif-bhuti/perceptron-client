@@ -6,3 +6,5 @@ export { Floating } from "./anim/Floating";
 export { Button } from "./button/Button";
 //text
 export { Text } from "./Text/Text";
+//card
+export { InfoCard } from "./card/InfoCard";
