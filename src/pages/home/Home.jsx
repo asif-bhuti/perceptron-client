@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../../components";
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
+import { Text } from "../../components";
 
 const socialMediaIcons = [
   { Icon: AiFillGithub, link: "https://www.github.com/" },
@@ -26,17 +27,15 @@ export const Home = () => {
     "
     >
       <div className="flex flex-col">
-        <h3 className="font-krona text-4xl bg-gradient-to-r from-primary-200 via-primary-100 to-primary-200 bg-clip-text text-transparent self-start text-start">
-          We Are Solution Oriented
-        </h3>
-        <h1 className="font-montserrat text-8xl font-bold bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan bg-clip-text text-transparent self-start text-start">
+        <Text variant="heading">We Are Solution Oriented</Text>
+        <Text variant="title" size="8xl">
           Tech Agency
-        </h1>
-        <p className="font-lato text-primary-100 w-[640px]">
+        </Text>
+        <Text>
           Empowering businesses with innovative web and mobile app solutions for
           the digital age. We craft cutting-edge web and mobile applications to
           drive your digital success.
-        </p>
+        </Text>
         <span className="my-4"></span>
         <div className="flex">
           <Button variant={"primary"}>Hire Us!</Button>

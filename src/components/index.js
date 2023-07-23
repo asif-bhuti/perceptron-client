@@ -4,3 +4,5 @@ export { Navbar } from "./navbar/Navbar";
 export { Floating } from "./anim/Floating";
 //button
 export { Button } from "./button/Button";
+//text
+export { Text } from "./Text/Text";
