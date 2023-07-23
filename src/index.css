@@ -6,3 +6,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* index.css */
+/* index.css */
+@keyframes rotateAndFloat {
+  0% {
+    transform: rotate(0) translateY(-50px);
+  }
+  25% {
+    transform: rotate(90deg) translateY(0);
+  }
+  50% {
+    transform: rotate(180deg) translateY(50px);
+  }
+  75% {
+    transform: rotate(270deg) translateY(0);
+  }
+  100% {
+    transform: rotate(360deg) translateY(-50px);
+  }
+}
