@@ -1,38 +1,39 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import { Button } from "../button/Button";
 
 export const Navbar = () => {
   return (
-    <nav className="z-10 relative">
+    <nav className="z-10 relative ">
       <div className="w-full flex justify-between items-center">
-        <NavLink to={"/"}>
+        <Link to="home" smooth={true}>
           <img
             src="logo_nav.png"
             alt="PERCEPTRON"
-            className="font-krona text-primary-100 m-6 text-[20px] h-8"
+            className="font-krona text-primary-100 m-6 text-[20px] h-8 cursor-pointer"
           />
-        </NavLink>
+        </Link>
         <ul className="flex justify-end w-1/2 items-center">
-          <NavLink to={"/"} className="nav-link">
+          <Link to={"home"} smooth={true} className="nav-link">
             Home
-          </NavLink>
-          <NavLink to={"services"} className="nav-link">
+          </Link>
+          <Link to={"services"} smooth={true} className="nav-link">
             Services
-          </NavLink>
-          <NavLink to={"projects"} className="nav-link">
+          </Link>
+          <Link to={"projects"} smooth={true} className="nav-link">
             Projects
-          </NavLink>
-          <NavLink to={"pricing"} className="nav-link">
+          </Link>
+          <Link to="pricing" smooth={true} className="nav-link">
             Pricing
-          </NavLink>
+          </Link>
           <Button>
-            <NavLink
+            <Link
               to={"contact"}
+              smooth={true}
               className="font-montserrat text-primary-100"
             >
               Contact
-            </NavLink>
+            </Link>
           </Button>
         </ul>
       </div>

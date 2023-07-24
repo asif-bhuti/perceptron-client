@@ -9,8 +9,15 @@
 
 @layer components {
   .nav-link {
-    @apply text-xl font-montserrat text-primary-100 m-4;
+    @apply text-xl font-montserrat text-primary-100 m-4 cursor-pointer;
   }
+  .section {
+    @apply py-24 h-screen flex items-center;
+  }
+}
+
+body {
+  @apply scrollbar-hide;
 }
 
 @keyframes rotateAndFloat {

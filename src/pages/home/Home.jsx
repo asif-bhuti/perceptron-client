@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../../components";
 import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Text } from "../../components";
 
 const socialMediaIcons = [
@@ -12,20 +12,17 @@ const socialMediaIcons = [
 
 export const Home = () => {
   const SocialMediaIcon = ({ Icon, link, size = "32px", color = "fff" }) => (
-    <NavLink to={link}>
+    <Link to={link}>
       <Icon
         size={size}
         color={color}
         className="mr-4 opacity-60 hover:opacity-100 transition-all ease-in duration-75"
       />
-    </NavLink>
+    </Link>
   );
 
   return (
-    <div
-      className="relative z-30 m-8
-    "
-    >
+    <div className="relative z-30 m-8 section" id="home">
       <div className="flex flex-col">
         <Text variant="heading">We Are Solution Oriented</Text>
         <Text variant="title" size="8xl">

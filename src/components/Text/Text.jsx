@@ -11,7 +11,7 @@ export const Text = ({
   return (
     <p
       className={twMerge(
-        clsx(variant === "body" && "font-lato text-primary-100 w-[640px]"),
+        variant === "body" && "font-lato text-primary-100 w-[640px]",
         variant === "title" &&
           `font-montserrat pr-2 pb-2 text-${size} font-bold bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan bg-clip-text text-transparent self-start text-start`,
         variant === "heading" &&

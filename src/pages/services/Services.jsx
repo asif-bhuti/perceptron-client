@@ -43,11 +43,11 @@ const saasAppsIcons = [
 
 export const Services = () => {
   return (
-    <div className="relative z-30 m-8">
+    <div className="relative z-30 m-8 section" id="services">
       <div className="grid grid-cols-2 grid-rows-3 gap-2">
         <div className="col-span-2">
           <Text variant="heading">Focused On Your</Text>
-          <Text variant="title" size="5xl">
+          <Text variant="title" className={"text-6xl"}>
             Customized Solution
           </Text>
           <Text className={"mb-8"}>
