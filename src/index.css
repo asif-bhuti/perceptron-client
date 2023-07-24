@@ -12,12 +12,16 @@
     @apply text-xl font-montserrat text-primary-100 m-4 cursor-pointer;
   }
   .section {
-    @apply py-24 h-screen flex items-center;
+    @apply py-8 h-screen flex items-center;
   }
 }
 
 body {
   @apply scrollbar-hide;
+}
+
+.carousel .thumb {
+  @apply !rounded-xl;
 }
 
 @keyframes rotateAndFloat {
