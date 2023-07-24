@@ -1,4 +1,5 @@
 import React from "react";
+import { Text, InfoCard, SlideIn, PopUp } from "../../components";
 import { MdWebAsset, MdWeb } from "react-icons/md";
 import {
   SiMongodb,
@@ -8,20 +9,28 @@ import {
   SiNodedotjs,
   SiFlutter,
   SiIos,
+  SiVuedotjs,
+  SiNextdotjs,
+  SiAngular,
+  SiDjango,
+  SiRuby,
+  SiLaravel,
+  SiPhp,
   SiSemanticweb,
 } from "react-icons/si";
 import { AiOutlineMobile, AiFillAndroid } from "react-icons/ai";
 import { DiHtml5, DiCss3Full, DiJavascript1 } from "react-icons/di";
-import { Text, InfoCard } from "../../components";
 
 const staticWebsiteIcons = [
   { Icon: DiHtml5, color: "#E44D26" },
   { Icon: DiCss3Full, color: "#264DE4" },
   { Icon: SiTailwindcss, color: "#06B6D4" },
   { Icon: DiJavascript1, color: "#F0DB4F" },
+  { Icon: SiPhp, color: "#777BB4" },
 ];
 
 const webAppIcons = [
+  { Icon: SiNextdotjs, color: "#D1D1D1" },
   { Icon: SiMongodb, color: "#47A248" },
   { Icon: SiExpress, color: "#D1D1D1" },
   { Icon: SiReact, color: "#61DBFB" },
@@ -36,9 +45,11 @@ const mobileAppsIcons = [
 ];
 
 const saasAppsIcons = [
-  { Icon: SiReact, color: "#61DBFB" },
-  { Icon: SiNodedotjs, color: "#339933" },
-  { Icon: DiJavascript1, color: "#F0DB4F" },
+  { Icon: SiVuedotjs, color: "#4FC08D" },
+  { Icon: SiAngular, color: "#DD0031" },
+  { Icon: SiDjango, color: "#092E20" },
+  { Icon: SiRuby, color: "#CC342D" },
+  { Icon: SiLaravel, color: "#FF2D20" },
 ];
 
 export const Services = () => {
@@ -46,16 +57,20 @@ export const Services = () => {
     <div className="relative z-30 m-8 section" id="services">
       <div className="grid grid-cols-2 grid-rows-3 gap-2">
         <div className="col-span-2">
-          <Text variant="heading">Focused On Your</Text>
-          <Text variant="title" className={"text-6xl"}>
-            Customized Solution
-          </Text>
-          <Text className={"mb-8"}>
-            With latest technologies at our disposal, get the best solution that
-            you deserve.
-          </Text>
+          <SlideIn delay={0.8}>
+            <Text variant="heading">Focused On Your</Text>
+            <Text variant="title" className={"text-6xl"}>
+              Customized Solution
+            </Text>
+          </SlideIn>
+          <SlideIn direction={"left"}>
+            <Text className={"mb-8"}>
+              With latest technologies at our disposal, get the best solution
+              that you deserve.
+            </Text>
+          </SlideIn>
         </div>
-        <div className="grid-cols-1">
+        <PopUp delay={0.1} className="grid-cols-1">
           <InfoCard
             Icon={MdWebAsset}
             HeadingText={"Static Websites"}
@@ -64,8 +79,8 @@ export const Services = () => {
             }
             HeadingIcons={staticWebsiteIcons}
           />
-        </div>
-        <div className="grid-cols-1">
+        </PopUp>
+        <PopUp className="grid-cols-1">
           <InfoCard
             Icon={MdWeb}
             HeadingText={"Web Applications"}
@@ -74,9 +89,8 @@ export const Services = () => {
             }
             HeadingIcons={webAppIcons}
           />
-        </div>
-        <div className="grid-cols-1 ">
-          {" "}
+        </PopUp>
+        <PopUp delay={0.5} className="grid-cols-1 ">
           <InfoCard
             Icon={AiOutlineMobile}
             HeadingText={"Mobile Applications"}
@@ -85,9 +99,8 @@ export const Services = () => {
             }
             HeadingIcons={mobileAppsIcons}
           />
-        </div>
-        <div className="grid-cols-1 ">
-          {" "}
+        </PopUp>
+        <PopUp delay={0.7} className="grid-cols-1 ">
           <InfoCard
             Icon={SiSemanticweb}
             HeadingText={"SaaS Applications"}
@@ -96,7 +109,7 @@ export const Services = () => {
             }
             HeadingIcons={saasAppsIcons}
           />
-        </div>
+        </PopUp>
       </div>
     </div>
   );

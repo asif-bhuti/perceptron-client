@@ -15,7 +15,7 @@ export const InfoCard = ({ Icon, HeadingText, BodyText, HeadingIcons }) => {
           {HeadingIcons.map((item, index) => (
             <item.Icon
               key={index}
-              size={"30px"}
+              size={"25px"}
               color={item.color}
               className="text-primary-200 mr-1"
             />
