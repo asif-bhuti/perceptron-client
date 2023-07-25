@@ -51,6 +51,10 @@ export const CustomCarousel = () => {
           showArrows={true}
           showStatus={false}
           showThumbs={true}
+          autoPlay={true}
+          infiniteLoop={true}
+          transitionTime={1000}
+          interval={4000}
           onChange={handleSlideChange}
           className="w-[680px] mr-8 mobile:h-[350px] mobile:w-[380px]"
         >
