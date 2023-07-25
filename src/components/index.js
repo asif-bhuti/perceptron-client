@@ -6,6 +6,8 @@ export { SlideIn } from "./anim/SlideIn";
 export { SlideUp } from "./anim/SlideUp";
 export { PopUp } from "./anim/PopUp";
 export { Carousel } from "./anim/Carousel";
+export { FollowPointer } from "./anim/FollowPointer";
+export { AnimateLogo } from "./anim/AnimateLogo";
 //button
 export { Button } from "./button/Button";
 //text
