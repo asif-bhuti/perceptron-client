@@ -25,7 +25,7 @@ export const MenuItem = ({ to, name, toggle }) => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="text-2xl font-semibold flex justify-center items-center h-16 w-full cursor-pointer"
+      className="text-2xl font-semibold flex justify-center items-center h-16 w-full cursor-pointer text-white"
     >
       <Link to={to} smooth={true} onClick={toggle}>
         {name}
