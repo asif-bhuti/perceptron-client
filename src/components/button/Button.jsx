@@ -2,7 +2,13 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 
-export const Button = ({ children, variant, props, className }) => {
+export const Button = ({
+  children,
+  variant,
+  props,
+  className,
+  classNameSpan,
+}) => {
   return (
     <button
       {...props}
@@ -20,7 +26,8 @@ export const Button = ({ children, variant, props, className }) => {
           clsx(
             "relative px-5 py-2.5 transition-all ease-in duration-75 bg-primary-400 rounded-md group-hover:bg-opacity-0",
             variant === "primary" && "bg-transparent text-primary-400"
-          )
+          ),
+          classNameSpan
         )}
       >
         {children}
