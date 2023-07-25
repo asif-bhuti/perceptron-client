@@ -2,7 +2,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 import clsx from "clsx";
 
-export const Button = ({ children, variant, props }) => {
+export const Button = ({ children, variant, props, className }) => {
   return (
     <button
       {...props}
@@ -11,7 +11,8 @@ export const Button = ({ children, variant, props }) => {
           "relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium  rounded-lg group bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-blue-300 ",
           variant === "primary" &&
             "from-primary-200 via-primary-200 to-primary-100 hover:from-primary-100 hover:via-primary-100 hover:to-primary-200 transition-all ease-in duration-75"
-        )
+        ),
+        className
       )}
     >
       <span
