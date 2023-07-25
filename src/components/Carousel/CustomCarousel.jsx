@@ -45,19 +45,19 @@ export const CustomCarousel = () => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex mobile:flex-col">
       <SlideIn direction={"left"}>
         <Carousel
           showArrows={true}
           showStatus={false}
           showThumbs={true}
           onChange={handleSlideChange}
-          className="w-[680px] mr-8"
+          className="w-[680px] mr-8 mobile:h-[350px] mobile:w-[380px]"
         >
           {slides.map((slide) => (
             <div
               key={slide.id}
-              className="inline-flex items-center justify-center p-1 h-[450px] w-[680px] bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan rounded-xl"
+              className="inline-flex items-center justify-center p-1 h-[450px] w-[680px] mobile:h-[250px] mobile:w-[380px] bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan rounded-xl"
             >
               <img
                 src={slide.image}
@@ -69,10 +69,15 @@ export const CustomCarousel = () => {
         </Carousel>
       </SlideIn>
       <SlideIn>
-        <Text variant="heading" className={"text-3xl"}>
+        <Text variant="heading" className={"text-3xl mobile:text-2xl"}>
           {slides[currentSlide].title}
         </Text>
-        <Text variant="title" className={"text-white font-thin text-lg"}>
+        <Text
+          variant="title"
+          className={
+            "text-white font-thin text-lg mobile:text-xl mobile:w-[96%]"
+          }
+        >
           {slides[currentSlide].description}
         </Text>
 

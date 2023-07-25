@@ -25,7 +25,7 @@ export const Home = () => {
   );
 
   return (
-    <div className="relative z-20 m-8 section" id="home">
+    <div className="relative z-20 m-8 mobile:m-2 section" id="home">
       <div className="flex flex-col">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -34,9 +34,7 @@ export const Home = () => {
           className="flex flex-col"
         >
           <Text variant="heading">We Are Solution Oriented</Text>
-          <Text variant="title" className={"text-8xl"}>
-            Tech Agency
-          </Text>
+          <Text variant="title">Tech Agency</Text>
           <Text>
             Empowering businesses with innovative web and mobile app solutions
             for the digital age. We craft cutting-edge web and mobile

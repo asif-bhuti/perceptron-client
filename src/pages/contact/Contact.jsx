@@ -6,16 +6,16 @@ import { Button, Text, SlideIn } from "../../components";
 export const Contact = () => {
   return (
     <div
-      className="relative z-30 m-8 section flex-col items-start"
+      className={`relative z-30 m-8 mobile:m-4 section flex-col items-start  `}
       id="contact"
     >
       <SlideIn direction={"left"} delay={0.1}>
-        <Text variant="heading" className={"mb-16"}>
+        <Text variant="heading" className={"mb-16 mobile:mb-4 mobile:text-2xl"}>
           Contact Us
         </Text>
       </SlideIn>
-      <div className="flex w-full justify-between">
-        <div className="w-[30%] h-screen">
+      <div className="flex mobile:flex-col w-full justify-between">
+        <div className="w-[30%] h-screen mobile:w-full mobile:h-full">
           <SlideIn direction={"left"} delay={0.1} className="input-container">
             <input
               type="text"
@@ -54,22 +54,28 @@ export const Contact = () => {
         <motion.div
           whileHover={{ scale: [null, 1.5, 1.4] }}
           transition={{ duration: 0.3 }}
-          className="bg-opacity-20 bg-primary-100 h-[40%] w-[40%] rounded-lg p-4"
+          className="bg-opacity-20 bg-primary-100 h-[40%] w-[40%] rounded-lg p-4 mobile:w-full mobile:h-full mobile:mt-8"
         >
-          <Text variant="title" className={"text-white"}>
+          <Text variant="title" className={"text-white mobile:text-4xl"}>
             Info
           </Text>
           <div className="flex">
-            <FiMail className={"inline mr-2"} size={"40px"} color="white" />
-            <Text className={"text-3xl"}>perceptron@gmail.com</Text>
-          </div>
-          <div className="flex">
-            <FiPhoneCall
-              className={"inline mr-2"}
+            <FiMail
+              className={"inline mr-2 mobile:p-2"}
               size={"40px"}
               color="white"
             />
-            <Text className={"text-3xl"}>+88-018-5998-1836</Text>
+            <Text className={"text-3xl mobile:text-xl"}>
+              perceptron@gmail.com
+            </Text>
+          </div>
+          <div className="flex">
+            <FiPhoneCall
+              className={"inline mr-2 mobile:p-2"}
+              size={"40px"}
+              color="white"
+            />
+            <Text className={"text-3xl mobile:text-xl"}>+88-018-5998-1836</Text>
           </div>
         </motion.div>
       </div>

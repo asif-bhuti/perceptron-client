@@ -37,7 +37,7 @@ export const StatCard = ({ count = 100, text = "Days Deliver" }) => {
   return (
     <div
       ref={ref}
-      className="flex flex-col w-32 p-4 bg-white bg-opacity-20 rounded-md mr-4"
+      className="flex flex-col w-32 mobile:w-28 p-4 bg-white bg-opacity-20 rounded-md mr-4"
     >
       <Text
         variant="heading"
@@ -47,7 +47,10 @@ export const StatCard = ({ count = 100, text = "Days Deliver" }) => {
       >
         {animatedCount}
       </Text>
-      <Text variant="title" className={"font-normal text-base text-white"}>
+      <Text
+        variant="title"
+        className={"font-normal text-base text-white mobile:text-sm"}
+      >
         {text}
       </Text>
     </div>

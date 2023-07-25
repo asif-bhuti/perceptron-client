@@ -11,7 +11,7 @@ export const PricingCard = () => {
             <div>
               <Text
                 variant="title"
-                className={"text-2xl group-hover:text-white"}
+                className={"text-2xl group-hover:text-white mobile:text-xl"}
               >
                 Package Name
               </Text>

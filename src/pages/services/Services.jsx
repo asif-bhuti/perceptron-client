@@ -54,11 +54,13 @@ const saasAppsIcons = [
 
 export const Services = () => {
   return (
-    <div className="relative z-30 m-8 section" id="services">
+    <div className="relative z-30 m-8 mobile:m-2 section" id="services">
       <div className="grid grid-cols-2 grid-rows-3 gap-2">
         <div className="col-span-2">
           <SlideIn delay={0.8}>
-            <Text variant="heading">Focused On Your</Text>
+            <Text variant="heading" className={"mobile:text-2xl"}>
+              Focused On Your
+            </Text>
             <Text variant="title" className={"text-6xl"}>
               Customized Solution
             </Text>
@@ -70,7 +72,7 @@ export const Services = () => {
             </Text>
           </SlideIn>
         </div>
-        <PopUp delay={0.1} className="grid-cols-1">
+        <PopUp delay={0.1} className="">
           <InfoCard
             Icon={MdWebAsset}
             HeadingText={"Static Websites"}
@@ -80,7 +82,7 @@ export const Services = () => {
             HeadingIcons={staticWebsiteIcons}
           />
         </PopUp>
-        <PopUp className="grid-cols-1">
+        <PopUp className="">
           <InfoCard
             Icon={MdWeb}
             HeadingText={"Web Applications"}
@@ -90,7 +92,7 @@ export const Services = () => {
             HeadingIcons={webAppIcons}
           />
         </PopUp>
-        <PopUp delay={0.5} className="grid-cols-1 ">
+        <PopUp delay={0.5} className="">
           <InfoCard
             Icon={AiOutlineMobile}
             HeadingText={"Mobile Applications"}
@@ -100,7 +102,7 @@ export const Services = () => {
             HeadingIcons={mobileAppsIcons}
           />
         </PopUp>
-        <PopUp delay={0.7} className="grid-cols-1 ">
+        <PopUp delay={0.7} className="">
           <InfoCard
             Icon={SiSemanticweb}
             HeadingText={"SaaS Applications"}
