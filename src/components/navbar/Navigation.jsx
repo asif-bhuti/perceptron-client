@@ -24,7 +24,7 @@ export const Navigation = ({ toggle, isOpen }) => {
       <MenuItem to={"services"} name={"Services"} toggle={toggle} />
       <MenuItem to={"projects"} name={"Projects"} toggle={toggle} />
       <MenuItem to={"pricing"} name={"Pricing"} toggle={toggle} />
-      <MenuItem to={"contact"} name={"contact"} toggle={toggle} />
+      <MenuItem to={"contact"} name={"Contact"} toggle={toggle} />
     </motion.ul>
   );
 };
