@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer"; // Import the hook
 import { Text } from "../Text/Text";
 
-export const StatCard = ({ count = 100, text = "Days Deliver" }) => {
+export const StatCard = ({ count = 100, text = "Days Deliver", percent }) => {
   const [animatedCount, setAnimatedCount] = useState(0);
 
   // Use the useInView hook to determine if the component is in view
@@ -45,7 +45,7 @@ export const StatCard = ({ count = 100, text = "Days Deliver" }) => {
           "bg-gradient-to-r from-cyan-600 via-cyan-500  to-secondary-cyan bg-clip-text text-transparent text-2xl"
         }
       >
-        {animatedCount}
+        {animatedCount + (percent ? "%" : "")}
       </Text>
       <Text
         variant="title"
