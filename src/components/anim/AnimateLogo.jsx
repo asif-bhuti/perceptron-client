@@ -32,8 +32,8 @@ export const AnimateLogo = () => {
               fill="url(#paint1_linear_48_11)"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M49.931 23.069C49.931 20.308 47.6925 18.069 44.931 18.069H23.069C20.3075 18.069 18.069 20.308 18.069 23.069V44.931C18.069 47.692 20.3075 49.931 23.069 49.931H44.931C47.6925 49.931 49.931 47.692 49.931 44.931V23.069ZM17 12C14.2386 12 12 14.239 12 17V51C12 53.761 14.2386 56 17 56H51C53.7614 56 56 53.761 56 51V17C56 14.239 53.7614 12 51 12H17Z"
               fill="url(#paint2_linear_48_11)"
             />
@@ -46,9 +46,9 @@ export const AnimateLogo = () => {
                 y2="40.8571"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#FF4EDA" />
-                <stop offset="0.505208" stop-color="#C003FF" />
-                <stop offset="1" stop-color="#0AE6FD" />
+                <stop stopColor="#FF4EDA" />
+                <stop offset="0.505208" stopColor="#C003FF" />
+                <stop offset="1" stopColor="#0AE6FD" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_48_11"
@@ -58,9 +58,9 @@ export const AnimateLogo = () => {
                 y2="41.4568"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#FF4EDA" />
-                <stop offset="0.505208" stop-color="#C003FF" />
-                <stop offset="1" stop-color="#0AE6FD" />
+                <stop stopColor="#FF4EDA" />
+                <stop offset="0.505208" stopColor="#C003FF" />
+                <stop offset="1" stopColor="#0AE6FD" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_48_11"
@@ -70,9 +70,9 @@ export const AnimateLogo = () => {
                 y2="52.8571"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#FF4EDA" />
-                <stop offset="0.505208" stop-color="#C003FF" />
-                <stop offset="1" stop-color="#0AE6FD" />
+                <stop stopColor="#FF4EDA" />
+                <stop offset="0.505208" stopColor="#C003FF" />
+                <stop offset="1" stopColor="#0AE6FD" />
               </linearGradient>
             </defs>
           </svg>
@@ -98,10 +98,10 @@ export const AnimateLogo = () => {
               y2="22.6721"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#A7A7A7" />
-              <stop offset="0.1875" stop-color="#FCFCFC" />
-              <stop offset="0.765625" stop-color="#FCFCFC" />
-              <stop offset="1" stop-color="#A7A7A7" />
+              <stop stopColor="#A7A7A7" />
+              <stop offset="0.1875" stopColor="#FCFCFC" />
+              <stop offset="0.765625" stopColor="#FCFCFC" />
+              <stop offset="1" stopColor="#A7A7A7" />
             </linearGradient>
           </defs>
         </svg>

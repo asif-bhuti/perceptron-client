@@ -24,7 +24,15 @@ body {
 }
 
 .carousel .thumb {
-  @apply !rounded-xl;
+  @apply !rounded-lg border-red-600;
+}
+
+.carousel .thumb img {
+  @apply !rounded-md;
+}
+
+.thumbs-wrapper {
+  @apply !my-1 !mx-0;
 }
 
 @keyframes rotateAndFloat {

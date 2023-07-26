@@ -45,23 +45,23 @@ export const CustomCarousel = () => {
   };
 
   return (
-    <div className="flex mobile:flex-col">
+    <div className="flex mobile:flex-col h-full">
       <SlideIn direction={"left"}>
         <Carousel
           showArrows={true}
           showStatus={false}
-          showThumbs={true}
+          showThumbs={false}
           autoPlay={true}
           infiniteLoop={true}
           transitionTime={1000}
           interval={4000}
           onChange={handleSlideChange}
-          className="w-[680px] mr-8 mobile:h-[350px] mobile:w-[380px]"
+          className="w-[880px] h-full mr-8 mobile:w-[380px] mobile:mb-4"
         >
           {slides.map((slide) => (
             <div
               key={slide.id}
-              className="inline-flex items-center justify-center p-1 h-[450px] w-[680px] mobile:h-[250px] mobile:w-[380px] bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan rounded-xl"
+              className="inline-flex items-center justify-center p-1 h-full w-[880px] mobile:h-[250px] mobile:w-[380px] bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan rounded-xl"
             >
               <img
                 src={slide.image}
@@ -89,11 +89,8 @@ export const CustomCarousel = () => {
           <StatCard count={slides[currentSlide].days} text="Days Delivery" />
           <StatCard
             count={slides[currentSlide].satisfaction}
+            percent={true}
             text="Customer Satisfaction"
-          />
-          <StatCard
-            count={slides[currentSlide].revesion}
-            text="Times Revesion"
           />
         </div>
         <Button variant={"primary"}>View Demo</Button>
