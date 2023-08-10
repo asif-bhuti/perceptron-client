@@ -15,11 +15,7 @@ function App() {
       {loading ? (
         <AnimateLogo />
       ) : (
-        <div
-          className={twMerge(
-            "w-full min-h-screen bg-primary-400 relative overflow-hidden"
-          )}
-        >
+        <div>
           <Navbar />
           <Floating />
           <Home />

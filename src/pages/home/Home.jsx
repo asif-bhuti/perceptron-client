@@ -25,7 +25,7 @@ export const Home = () => {
   );
 
   return (
-    <div className="relative z-20 m-8 mobile:m-2 section" id="home">
+    <div className=" m-8 mobile:m-2 section" id="home">
       <div className="flex flex-col">
         <motion.div
           initial={{ opacity: 0, x: -100 }}

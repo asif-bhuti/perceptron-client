@@ -20,7 +20,7 @@
 }
 
 body {
-  @apply scrollbar-hide;
+  @apply scrollbar-hide bg-primary-400;
 }
 
 .carousel .thumb {
