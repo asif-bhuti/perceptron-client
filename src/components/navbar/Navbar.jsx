@@ -48,9 +48,7 @@ export const Navbar = () => {
               <Link to={"projects"} smooth={true} className="nav-link">
                 Projects
               </Link>
-              <Link to="pricing" smooth={true} className="nav-link">
-                Pricing
-              </Link>
+
               <Button>
                 <Link
                   to={"contact"}
