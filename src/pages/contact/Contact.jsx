@@ -55,29 +55,43 @@ export const Contact = () => {
           </SlideIn>
         </div>
 
-        <div className=" flex flex-col gap-5 bg-gradient-to-tr from-primary-100 via-purple-200 to-primary-100 h-[40%] w-[40%] rounded-lg p-4 mobile:w-full mobile:h-full mobile:mt-8">
+        <div className=" flex flex-col gap-0 bg-gradient-to-tr from-primary-100 via-primary-200 to-primary-100 h-[40%] w-[40%] rounded-lg p-4 mobile:w-full mobile:h-full mobile:mt-8">
           <Text variant="title" className={"text-primary-400 mobile:text-4xl"}>
             Info
           </Text>
-          <div className="flex gap-2 ">
+          <div className="flex gap-2 justify-center items-center">
             <FiMail className={"inline mr-2 mobile:p-2"} size={"40px"} />
             <Text className={"text-primary-400 text-3xl mobile:text-xl"}>
               perceptron@gmail.com
             </Text>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-center">
             <FiPhoneCall className={"inline mr-2 mobile:p-2"} size={"40px"} />
-            <Text className={"text-primary-400 text-3xl mobile:text-xl"}>
-              +88-018-5998-1836
-            </Text>
+            <div className="flex flex-col">
+              <Text
+                className={
+                  "text-primary-400 text-3xl mobile:text-xl whitespace-nowrap"
+                }
+              >
+                +88-018-5998-1836
+              </Text>
+              <Text
+                className={
+                  "text-primary-400 text-3xl mobile:text-xl whitespace-nowrap"
+                }
+              >
+                +880-176-419-5586
+              </Text>
+            </div>
           </div>
-          <div className="flex gap-2">
+
+          <div className="flex gap-2 justify-center items-center">
             <MdOutlineLocationOn
               className={"inline mr-2 mobile:p-2"}
               size={"40px"}
             />
             <Text className={"text-primary-400 text-3xl mobile:text-xl"}>
-              +88-018-5998-1836
+              DHK, BD
             </Text>
           </div>
         </div>
