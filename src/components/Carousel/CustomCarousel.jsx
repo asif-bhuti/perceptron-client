@@ -5,38 +5,7 @@ import { Text } from "../Text/Text";
 import { StatCard } from "../card/StatCard";
 import { Button } from "../button/Button";
 import { SlideIn } from "../anim/SlideIn";
-
-const slides = [
-  {
-    id: 1,
-    title: "Pluto 2023",
-    description:
-      "A Multi-Level Marketing Web Applications Admin Panel for Independent Sales Management Team.",
-    images: ["/assets/frame1.png", "/assets/frame2.png", "/assets/frame3.png"],
-    alt: "Pluto 2023",
-    days: 45,
-    satisfaction: 100,
-    revesion: 5,
-  },
-  {
-    id: 2,
-    title: "Pluto 2024",
-    description: "A mission to Pluto2",
-    images: ["/assets/frame1.png", "/assets/frame2.png", "/assets/frame3.png"],
-    days: 40,
-    satisfaction: 90,
-    revesion: 5,
-  },
-  {
-    id: 3,
-    title: "Pluto 2025",
-    description: "A mission to Pluto3",
-    images: ["/assets/frame1.png", "/assets/frame2.png", "/assets/frame3.png"],
-    days: 20,
-    satisfaction: 100,
-    revesion: 2,
-  },
-];
+import { slides } from "./slides";
 
 export const CustomCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -55,7 +24,7 @@ export const CustomCarousel = () => {
           autoPlay={true}
           infiniteLoop={true}
           transitionTime={1500}
-          interval={5000}
+          interval={7000}
           onChange={handleSlideChange}
           className="w-[880px] 3xl:w-[1400px] h-full mr-8 mobile:w-[380px] mobile:mb-4"
         >
@@ -68,7 +37,7 @@ export const CustomCarousel = () => {
                 autoPlay={true}
                 infiniteLoop={true}
                 transitionTime={500}
-                interval={1000}
+                interval={2000}
               >
                 {slide.images.map((image, index) => (
                   <div
@@ -111,7 +80,7 @@ export const CustomCarousel = () => {
             <StatCard
               count={slides[currentSlide].satisfaction}
               percent={true}
-              text="Customer Satisfaction"
+              text="Performance Rate"
             />
           </div>
           <Button variant={"primary"}>View Demo</Button>
