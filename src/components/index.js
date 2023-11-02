@@ -16,6 +16,6 @@ export { Text } from "./Text/Text";
 //card
 export { InfoCard } from "./card/InfoCard";
 export { StatCard } from "./card/StatCard";
-export { PricingCard } from "./card/PricingCard";
+export { Card } from "./card/Card";
 //carousel
 export { CustomCarousel } from "./Carousel/CustomCarousel";

@@ -9,6 +9,7 @@ export const PopUp = ({ delay = 0.3, children, className }) => {
     <motion.div
       ref={ref}
       initial={{ opacity: 0, scale: 0.5 }}
+      whileHover={{ scale: [null, 0.5, 0.99] }}
       animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.5 }}
       transition={{
         duration: 0.3,
