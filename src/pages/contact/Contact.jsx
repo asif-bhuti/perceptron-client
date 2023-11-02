@@ -72,24 +72,17 @@ export const Contact = () => {
               perceptron@gmail.com
             </Text>
           </div>
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 justify-center items-center">
             <FiPhoneCall className={"inline mr-2 mobile:p-2"} size={"40px"} />
-            <div className="flex flex-col">
+            <>
               <Text
                 className={
-                  "text-primary-400 text-3xl mobile:text-xl whitespace-nowrap 3xl:text-3xl"
+                  "text-primary-400 text-lg mobile:text-xl 3xl:text-3xl"
                 }
               >
-                +88-018-5998-1836
+                +880-185-998-1836, +880-176-419-5586
               </Text>
-              <Text
-                className={
-                  "text-primary-400 text-3xl mobile:text-xl whitespace-nowrap 3xl:text-3xl"
-                }
-              >
-                +880-176-419-5586
-              </Text>
-            </div>
+            </>
           </div>
 
           <div className="flex gap-2 justify-center items-center">
