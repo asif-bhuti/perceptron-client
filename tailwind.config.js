@@ -9,7 +9,7 @@ module.exports = {
           100: "#FCFCFC",
           200: "#CCCCCC",
           300: "#3F3F41",
-          400: "#0A0A0A",
+          400: "#0f0f11",
         },
         secondary: {
           cyan: "#0AE6FD",
