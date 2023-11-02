@@ -6,12 +6,18 @@ import { AiOutlineMobile } from "react-icons/ai";
 
 export const Services = () => {
   return (
-    <div className="relative z-30 m-8 mobile:m-2 section" id="services">
+    <div
+      className="relative z-30 m-8 mobile:m-2 section justify-start items-start"
+      id="services"
+    >
       <div className="grid grid-cols-2 grid-rows-3 gap-2">
         <div className="col-span-2">
           <SlideIn delay={0.8}>
             <>
-              <Text variant="heading" className={"mobile:text-2xl"}>
+              <Text
+                variant="heading"
+                className={"mobile:text-2xl 3xl:text-6xl"}
+              >
                 Focused On Your
               </Text>
               <Text variant="title" className={"text-6xl"}>

@@ -9,7 +9,7 @@ export const Projects = () => {
     >
       <Text
         variant="heading"
-        className={"text-4xl mb-8 mobile:mb-4 mobile:text-4xl"}
+        className={"text-4xl mb-8 mobile:mb-4 mobile:text-4xl 3xl:text-6xl"}
       >
         Our Projects
       </Text>

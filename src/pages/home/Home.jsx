@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "../../components";
 import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
-import { Link } from "react-router-dom";
 import { Text } from "../../components";
 import { motion } from "framer-motion";
 
@@ -48,7 +47,9 @@ export const Home = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col"
         >
-          <Text variant="heading">We Are Solution Oriented</Text>
+          <Text variant="heading" className={"3xl:text-4xl"}>
+            We Are Solution Oriented
+          </Text>
           <Text variant="title">Tech Agency</Text>
           <Text>
             Empowering businesses with innovative web and mobile app solutions

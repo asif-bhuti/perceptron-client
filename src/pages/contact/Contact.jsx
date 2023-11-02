@@ -13,7 +13,7 @@ export const Contact = () => {
       <SlideIn direction={"left"} delay={0.1}>
         <Text
           variant="heading"
-          className={"mb-16 text-6xl mobile:mb-4 mobile:text-2xl"}
+          className={"mb-16 text-6xl mobile:mb-4 mobile:text-2xl 3xl:text-6xl"}
         >
           Contact Us
         </Text>
@@ -56,12 +56,19 @@ export const Contact = () => {
         </div>
 
         <div className=" flex flex-col gap-0 bg-gradient-to-tr from-primary-100 via-primary-200 to-primary-100 h-[40%] w-[40%] rounded-lg p-4 mobile:w-full mobile:h-full mobile:mt-8">
-          <Text variant="title" className={"text-primary-400 mobile:text-4xl"}>
+          <Text
+            variant="title"
+            className={"text-primary-400 mobile:text-4xl 3xl:text-6xl"}
+          >
             Info
           </Text>
           <div className="flex gap-2 justify-center items-center">
             <FiMail className={"inline mr-2 mobile:p-2"} size={"40px"} />
-            <Text className={"text-primary-400 text-3xl mobile:text-xl"}>
+            <Text
+              className={
+                "text-primary-400 text-3xl mobile:text-xl 3xl:text-3xl"
+              }
+            >
               perceptron@gmail.com
             </Text>
           </div>
@@ -70,14 +77,14 @@ export const Contact = () => {
             <div className="flex flex-col">
               <Text
                 className={
-                  "text-primary-400 text-3xl mobile:text-xl whitespace-nowrap"
+                  "text-primary-400 text-3xl mobile:text-xl whitespace-nowrap 3xl:text-3xl"
                 }
               >
                 +88-018-5998-1836
               </Text>
               <Text
                 className={
-                  "text-primary-400 text-3xl mobile:text-xl whitespace-nowrap"
+                  "text-primary-400 text-3xl mobile:text-xl whitespace-nowrap 3xl:text-3xl"
                 }
               >
                 +880-176-419-5586
@@ -90,7 +97,11 @@ export const Contact = () => {
               className={"inline mr-2 mobile:p-2"}
               size={"40px"}
             />
-            <Text className={"text-primary-400 text-3xl mobile:text-xl"}>
+            <Text
+              className={
+                "text-primary-400 text-3xl mobile:text-xl 3xl:text-3xl"
+              }
+            >
               DHK, BD
             </Text>
           </div>
