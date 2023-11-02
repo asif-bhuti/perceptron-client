@@ -1,25 +1,8 @@
 import React from "react";
 import { Text, InfoCard, SlideIn, PopUp, Card } from "../../components";
 import { MdWebAsset, MdWeb } from "react-icons/md";
-import {
-  SiMongodb,
-  SiExpress,
-  SiReact,
-  SiTailwindcss,
-  SiNodedotjs,
-  SiFlutter,
-  SiIos,
-  SiVuedotjs,
-  SiNextdotjs,
-  SiAngular,
-  SiDjango,
-  SiRuby,
-  SiLaravel,
-  SiPhp,
-  SiSemanticweb,
-} from "react-icons/si";
-import { AiOutlineMobile, AiFillAndroid } from "react-icons/ai";
-import { DiHtml5, DiCss3Full, DiJavascript1 } from "react-icons/di";
+import { SiSemanticweb } from "react-icons/si";
+import { AiOutlineMobile } from "react-icons/ai";
 
 export const Services = () => {
   return (
