@@ -8,6 +8,7 @@ export { PopUp } from "./anim/PopUp";
 export { Carousel } from "./anim/Carousel";
 export { FollowPointer } from "./anim/FollowPointer";
 export { AnimateLogo } from "./anim/AnimateLogo";
+export { DotConnector } from "./anim/DotConnector";
 //button
 export { Button } from "./button/Button";
 //text
