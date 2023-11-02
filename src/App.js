@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { twMerge } from "tailwind-merge";
-import { Contact, Home, Pricing, Projects, Services } from "./pages";
-import { AnimateLogo, Floating, Navbar } from "./components";
+import { Contact, Footer, Home, Projects, Services } from "./pages";
+import { AnimateLogo, DotConnector, Floating, Navbar } from "./components";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -18,11 +17,12 @@ function App() {
         <div>
           <Navbar />
           <Floating />
+          <DotConnector />
           <Home />
           <Services />
           <Projects />
-          <Pricing />
           <Contact />
+          <Footer />
         </div>
       )}
     </>

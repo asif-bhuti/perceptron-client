@@ -1,26 +1,40 @@
 import React from "react";
 import { Button } from "../../components";
-import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 import { Text } from "../../components";
 import { motion } from "framer-motion";
 
 const socialMediaIcons = [
-  { Icon: AiFillGithub, link: "https://www.github.com/" },
-  { Icon: AiFillLinkedin, link: "https://www.linkedin.com/" },
-  { Icon: AiOutlineTwitter, link: "https://www.twitter.com/" },
+  { Icon: AiFillGithub, link: "https://github.com/perceptronbd" },
+  {
+    Icon: AiFillLinkedin,
+    link: "https://www.linkedin.com/company/perceptron-bd/",
+  },
+  {
+    Icon: AiFillFacebook,
+    link: "https://www.facebook.com/profile.php?id=100090958665980",
+  },
 ];
 
 export const Home = () => {
-  const SocialMediaIcon = ({ Icon, link, size = "32px", color = "fff" }) => (
-    <motion.div animate={{ rotate: 360 }} transition={{ from: 0, duration: 1 }}>
-      <Link to={link}>
+  const SocialMediaIcon = ({
+    Icon,
+    link,
+    delay,
+    size = "35px",
+    color = "fff",
+  }) => (
+    <motion.div
+      animate={{ rotate: 360 }}
+      transition={{ from: 0, duration: 1, delay: delay }}
+    >
+      <a href={link} target="_blank" rel="noreferrer">
         <Icon
           size={size}
           color={color}
-          className="mr-4 opacity-60 hover:opacity-100 transition-all ease-in duration-75"
+          className="hover:cursor-pointer hover:scale-110 transition-all ease-in duration-75"
         />
-      </Link>
+      </a>
     </motion.div>
   );
 
@@ -33,7 +47,9 @@ export const Home = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col"
         >
-          <Text variant="heading">We Are Solution Oriented</Text>
+          <Text variant="heading" className={"3xl:text-4xl"}>
+            We Are Solution Oriented
+          </Text>
           <Text variant="title">Tech Agency</Text>
           <Text>
             Empowering businesses with innovative web and mobile app solutions
@@ -63,9 +79,14 @@ export const Home = () => {
           </motion.div>
         </div>
         <span className="my-2"></span>
-        <div className="flex">
+        <div className="flex gap-2">
           {socialMediaIcons.map((item, index) => (
-            <SocialMediaIcon Icon={item.Icon} key={index} link={item.link} />
+            <SocialMediaIcon
+              Icon={item.Icon}
+              key={index}
+              link={item.link}
+              delay={index - 0.1}
+            />
           ))}
         </div>
       </div>
