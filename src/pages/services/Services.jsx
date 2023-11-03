@@ -32,7 +32,7 @@ export const Services = () => {
             </Text>
           </SlideIn>
         </div>
-        <div className="grid grid-cols-2 grid-rows-3 gap-2 mobile:flex mobile:overflow-x-auto mobile:w-screen mobile:mx-2 mobile:gap-4 ">
+        <div className="grid grid-cols-2 grid-rows-3 gap-2 mobile:flex mobile:overflow-x-auto mobile:w-[98vw] mobile:py-4 mobile:px-2 mobile:gap-4 ">
           <PopUp delay={0.1} className="">
             <Card>
               <InfoCard
