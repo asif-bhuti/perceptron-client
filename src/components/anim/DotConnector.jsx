@@ -86,7 +86,7 @@ export const DotConnector = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="w-full h-full fixed opacity-40 top-0 left-0 right-0 bottom-0 -z-50"
+      className="w-full mobile:w-screen h-full fixed opacity-40 top-0 left-0 right-0 bottom-0 -z-50"
     />
   );
 };
