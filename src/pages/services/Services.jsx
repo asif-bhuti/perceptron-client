@@ -6,11 +6,8 @@ import { AiOutlineMobile } from "react-icons/ai";
 
 export const Services = () => {
   return (
-    <section
-      className="section justify-start items-start bg-red-300"
-      id="services"
-    >
-      <div className="flex flex-col gap-2 bg-green-400">
+    <section className="section justify-start items-start" id="services">
+      <div className="flex flex-col gap-2">
         <>
           <SlideIn delay={0.8}>
             <>
