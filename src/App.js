@@ -18,8 +18,9 @@ function App() {
           <Navbar />
           <Floating />
           <DotConnector />
-          {/* 
           <Home />
+          {/* 
+          
           <Services />
           <Projects />
           <Contact />
