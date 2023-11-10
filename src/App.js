@@ -19,11 +19,11 @@ function App() {
           <Floating />
           <DotConnector />
           <Home />
-          <Services />
+          <Services /> <Projects />
           {/* 
           
           
-          <Projects />
+         
           <Contact />
           <Footer /> */}
         </>

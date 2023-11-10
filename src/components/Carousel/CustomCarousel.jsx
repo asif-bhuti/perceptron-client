@@ -15,7 +15,7 @@ export const CustomCarousel = () => {
   };
 
   return (
-    <div className="flex mobile:flex-col h-full">
+    <div className="flex flex-col sm:flex-row sm:h-full">
       <>
         <SlideIn direction={"left"}>
           <Carousel
@@ -27,12 +27,12 @@ export const CustomCarousel = () => {
             transitionTime={1000}
             interval={4000}
             onChange={handleSlideChange}
-            className="w-[880px] 3xl:w-[1400px] h-full mr-8 mobile:w-[380px] mobile:mb-4"
+            className="sm:w-[880px] 2xl:w-[1400px] sm:h-full w-[95vw] sm:mr-8 mb-6"
           >
             {slides.map((slide) => (
               <div
                 key={slide.id}
-                className="inline-flex items-center justify-center p-1 h-full w-[880px] 3xl:w-[1400px] mobile:h-[250px] mobile:w-[380px] bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan rounded-xl"
+                className="inline-flex items-center justify-center p-1 sm:h-full sm:w-[880px] 2xl:w-[1400px] h-[250px] w-[95vw] bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan rounded-xl"
               >
                 <img
                   src={slide.image}
@@ -46,27 +46,25 @@ export const CustomCarousel = () => {
       </>
 
       <>
-        <SlideIn
-          className={"flex flex-col justify-between mobile:h-[60%] h-[80%]"}
-        >
+        <SlideIn className={"flex flex-col justify-between h-[60%] sm:h-[80%]"}>
           <section>
             <Text
               variant="heading"
-              className={"text-3xl mobile:text-2xl 3xl:text-4xl mb-2"}
+              className={"sm:text-3xl text-2xl 2xl:text-4xl mb-2"}
             >
               {slides[currentSlide].title}
             </Text>
             <Text
               variant="title"
               className={
-                " text-white font-thin text-lg mobile:text-xl mobile:w-[96%] 3xl:text-3xl"
+                " text-white font-thin sm:text-lg text-base w-[96%] 2xl:text-3xl"
               }
             >
               {slides[currentSlide].description}
             </Text>
           </section>
-          <section>
-            <div className="flex my-8">
+          <section className="mb-4">
+            <div className="flex gap-4 mb-4">
               <StatCard
                 count={slides[currentSlide].days}
                 text="Days Delivery"
