@@ -12,7 +12,7 @@ export const DotConnector = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const x = 30;
+    const x = 40;
 
     for (let i = 0; i < x; i++) {
       stars.push({
@@ -86,7 +86,7 @@ export const DotConnector = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="w-full mobile:w-screen h-full fixed opacity-40 top-0 left-0 right-0 bottom-0 -z-50"
+      className="w-full mobile:w-screen h-full fixed opacity-80 top-0 left-0 right-0 bottom-0 -z-50"
     />
   );
 };
