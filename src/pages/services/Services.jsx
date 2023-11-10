@@ -7,20 +7,15 @@ import { AiOutlineMobile } from "react-icons/ai";
 export const Services = () => {
   return (
     <section
-      className="relative z-30 m-8 mobile:m-2 section justify-start items-start"
+      className="section justify-start items-start bg-red-300"
       id="services"
     >
-      <div className="flex flex-col gap-10 mobile:gap-2">
-        <div>
+      <div className="flex flex-col gap-2 bg-green-400">
+        <>
           <SlideIn delay={0.8}>
             <>
-              <Text
-                variant="heading"
-                className={"mobile:text-2xl 3xl:text-6xl"}
-              >
-                Focused On Your
-              </Text>
-              <Text variant="title" className={"text-6xl"}>
+              <Text variant="heading">Focused On Your</Text>
+              <Text variant="title" className={"sm:text-6xl"}>
                 Customized Solution
               </Text>
             </>
@@ -31,8 +26,8 @@ export const Services = () => {
               that you deserve.
             </Text>
           </SlideIn>
-        </div>
-        <div className="grid grid-cols-2 grid-rows-3 gap-2 mobile:flex mobile:overflow-x-auto mobile:w-[98vw] mobile:py-4 mobile:px-2 mobile:gap-4 ">
+        </>
+        <div className="sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-2 flex flex-col overflow-y-auto h-[480px] sm:w-full py-4 px-2 gap-4">
           <PopUp delay={0.1} className="">
             <Card>
               <InfoCard
