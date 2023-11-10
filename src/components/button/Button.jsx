@@ -1,6 +1,5 @@
 import React from "react";
-import { twMerge } from "tailwind-merge";
-import clsx from "clsx";
+import { cw } from "../../utils/cw";
 
 export const Button = ({
   children,
@@ -12,21 +11,22 @@ export const Button = ({
   return (
     <button
       {...props}
-      className={twMerge(
-        clsx(
-          "relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium  rounded-lg group bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-blue-300 ",
-          variant === "primary" &&
-            "from-primary-200 via-primary-200 to-primary-100 hover:from-primary-100 hover:via-primary-100 hover:to-primary-200 transition-all ease-in duration-75"
-        ),
+      className={cw(
+        "group appearance-none rounded-md bg-primary-100 text-primary-400 cursor-pointer inline-block text-sm font-medium tracking-[0] leading-[1em] m-0 opacity-100 outline-[0] px-8 py-4 relative text-center no-underline uppercase [transition:opacity_300ms_cubic-bezier(0.694,_0,_0.335,_1),_background-color_100ms_cubic-bezier(0.694,_0,_0.335,_1),_color_100ms_cubic-bezier(0.694,_0,_0.335,_1)] select-none align-baseline whitespace-nowrap before:animate-[opacityFallbackOut_0.5s_step-end_forwards] before:rounded-md before:[backface-visibility:hidden] before:bg-gradient-to-r before:from-secondary-pink before:via-secondary-purple before:to-secondary-cyan before:[clip-path:polygon(-1%_0,_0_0,_-25%_100%,_-1%_100%)] before:content before:h-full before:left-[0] before:absolute before:top-[0] before:[transform:translateZ(0)] before:[transition:clip-path_0.5s_cubic-bezier(0.165,_0.84,_0.44,_1),_-webkit-clip-path_0.5s_cubic-bezier(0.165,_0.84,_0.44,_1)] before:w-full before:hover:animate-[opacityFallbackIn_0s_step-start_forwards] before:hover:[clip-path:polygon(0_0,_101%_0,_101%_101%,_0_101%)] after:bg-[#ffffff]",
+        {
+          "bg-primary-400 border rounded-md before:from-primary-100 before:via-primary-200 before:to-primary-100":
+            variant === "secondary",
+        },
         className
       )}
     >
       <span
-        className={twMerge(
-          clsx(
-            "relative px-5 py-2.5 transition-all ease-in duration-75 bg-primary-400 rounded-md group-hover:bg-opacity-0",
-            variant === "primary" && "bg-transparent text-primary-400"
-          ),
+        className={cw(
+          "relative group-hover:text-primary-100",
+          {
+            "text-primary-100 group-hover:text-primary-400":
+              variant === "secondary",
+          },
           classNameSpan
         )}
       >
