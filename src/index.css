@@ -20,7 +20,7 @@
 }
 
 body {
-  @apply scrollbar-hide bg-primary-400 mobile:w-screen;
+  @apply scrollbar-hide bg-primary-400 w-screen sm:w-full;
 }
 
 .carousel .thumb {

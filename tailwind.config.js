@@ -3,7 +3,17 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      screens: { "3xl": { min: "1367px" }, mobile: { max: "1064px" } },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
+      height: {
+        screen: ["100vh", "100dvh"],
+        "sm-screen": ["100vh", "100svh"],
+      },
       colors: {
         primary: {
           100: "#FCFCFC",
