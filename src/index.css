@@ -9,7 +9,7 @@
 
 @layer components {
   .section {
-    @apply py-8 h-screen flex items-center;
+    @apply h-sm-screen sm:h-screen mx-4 flex items-center;
   }
   .input-container {
     @apply bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-blue rounded-md mb-4 focus-within:p-0.5 transition-all ease-in duration-75;
