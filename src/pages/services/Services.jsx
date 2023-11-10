@@ -24,8 +24,8 @@ export const Services = () => {
             </Text>
           </SlideIn>
         </>
-        <div className="sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-2 2xl:gap-y-8 flex overflow-x-auto h-[435px] w-[360px] px-1 sm:w-full gap-4">
-          <PopUp delay={0.1} className="">
+        <div className="sm:grid sm:grid-cols-2 flex overflow-x-auto h-[435px] w-[360px] px-1 sm:w-full gap-4">
+          <PopUp delay={0.1} className="sm:h-full">
             <Card>
               <InfoCard
                 Icon={MdWebAsset}
