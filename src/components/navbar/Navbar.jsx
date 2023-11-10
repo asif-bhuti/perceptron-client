@@ -30,7 +30,7 @@ export const Navbar = () => {
         </div>
       ) : (
         <nav className={`z-10 relative px-4 py-2`}>
-          <div className=" flex justify-between items-center">
+          <div className="flex justify-between items-center">
             <Link to="home" smooth={true}>
               <img
                 src="logo_nav.png"

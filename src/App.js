@@ -14,16 +14,17 @@ function App() {
       {loading ? (
         <AnimateLogo />
       ) : (
-        <div>
+        <>
           <Navbar />
           <Floating />
           <DotConnector />
+          {/* 
           <Home />
           <Services />
           <Projects />
           <Contact />
-          <Footer />
-        </div>
+          <Footer /> */}
+        </>
       )}
     </>
   );
