@@ -29,7 +29,7 @@ export const Navbar = () => {
           <MobileNavbar />
         </div>
       ) : (
-        <nav className={`z-10 relative"`}>
+        <nav className={`z-10 relative`}>
           <div className="w-full flex justify-between items-center">
             <Link to="home" smooth={true}>
               <img

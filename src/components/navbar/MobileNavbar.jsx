@@ -36,7 +36,7 @@ export const MobileNavbar = () => {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className={`relative z-30 w-full`}
+      className={`relative z-30 w-screen`}
     >
       <motion.div variants={sidebar} />
 
