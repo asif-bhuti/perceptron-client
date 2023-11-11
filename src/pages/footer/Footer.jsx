@@ -20,16 +20,16 @@ export const Footer = () => {
         <Icon
           size={size}
           color={color}
-          className="hover:cursor-pointer hover:scale-110 transition-all ease-in duration-75"
+          className="transition-all  duration-75 ease-in hover:scale-110 hover:cursor-pointer"
         />
       </a>
     </div>
   );
 
   return (
-    <div className="w-full h-fit p-10 bg-primary-400 flex flex-col justify-center items-center">
+    <div className="flex h-fit w-full flex-col items-center justify-center bg-primary-400 p-10">
       <img src="/logo/logo-bNw.png" alt="Perceptron Logo" className="w-64" />
-      <p className="text-white text-lg">Copyright © Perceptron, Org.</p>
+      <p className="text-lg text-white">Copyright © Perceptron, Org.</p>
       <div className="flex gap-4">
         {socialMediaIcons.map((item, index) => (
           <SocialMediaIcon Icon={item.Icon} key={index} link={item.link} />

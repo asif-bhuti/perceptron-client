@@ -9,18 +9,18 @@
 
 @layer components {
   .section {
-    @apply h-sm-screen sm:h-screen mx-4 flex items-center snap-start;
+    @apply mx-4 flex h-sm-screen snap-start items-center sm:h-screen;
   }
   .input-container {
-    @apply bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-blue rounded-md mb-4 focus-within:p-0.5 transition-all ease-in duration-75;
+    @apply mb-4 rounded-md bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-blue transition-all duration-75 ease-in focus-within:p-0.5;
   }
   .nav-link-container {
-    @apply appearance-none rounded-md box-border bg-opacity-0 text-primary-100 hover:text-primary-400 cursor-pointer inline-block text-sm font-semibold font-montserrat tracking-[0] leading-[1em] m-0 opacity-100 outline-[0] mx-2 w-36 px-4 py-4 relative text-center no-underline uppercase [transition:opacity_300ms_cubic-bezier(0.694,_0,_0.335,_1),_background-color_100ms_cubic-bezier(0.694,_0,_0.335,_1),_color_100ms_cubic-bezier(0.694,_0,_0.335,_1)] select-none align-baseline whitespace-nowrap before:animate-[opacityFallbackOut_0.5s_step-end_forwards] before:rounded-md before:[backface-visibility:hidden] before:bg-gradient-to-r before:from-primary-100 before:to-primary-200 before:[clip-path:polygon(-1%_0,_0_0,_-25%_100%,_-1%_100%)] before:content-[''] before:h-full before:left-[0] before:absolute before:top-[0] before:[transform:translateZ(0)] before:[transition:clip-path_0.5s_cubic-bezier(0.165,_0.84,_0.44,_1),_-webkit-clip-path_0.5s_cubic-bezier(0.165,_0.84,_0.44,_1)] before:w-full before:hover:animate-[opacityFallbackIn_0s_step-start_forwards] before:hover:[clip-path:polygon(0_0,_101%_0,_101%_101%,_0_101%)] after:bg-primary-100;
+    @apply relative  m-0 mx-2 box-border inline-block w-36 cursor-pointer select-none appearance-none whitespace-nowrap rounded-md bg-opacity-0 px-4 py-4 text-center align-baseline font-montserrat text-sm font-semibold uppercase leading-[1em] tracking-[0] text-primary-100 no-underline opacity-100 outline-[0] [transition:opacity_300ms_cubic-bezier(0.694,_0,_0.335,_1),_background-color_100ms_cubic-bezier(0.694,_0,_0.335,_1),_color_100ms_cubic-bezier(0.694,_0,_0.335,_1)] before:absolute before:left-[0] before:top-[0] before:h-full before:w-full before:animate-[opacityFallbackOut_0.5s_step-end_forwards] before:rounded-md before:bg-gradient-to-r before:from-primary-100 before:to-primary-200 before:content-[''] before:[backface-visibility:hidden] before:[clip-path:polygon(-1%_0,_0_0,_-25%_100%,_-1%_100%)] before:[transform:translateZ(0)] before:[transition:clip-path_0.5s_cubic-bezier(0.165,_0.84,_0.44,_1),_-webkit-clip-path_0.5s_cubic-bezier(0.165,_0.84,_0.44,_1)] after:bg-primary-100 hover:text-primary-400 before:hover:animate-[opacityFallbackIn_0s_step-start_forwards] before:hover:[clip-path:polygon(0_0,_101%_0,_101%_101%,_0_101%)];
   }
 }
 
 body {
-  @apply scrollbar-hide snap-y snap-mandatory bg-primary-400 w-screen sm:w-full;
+  @apply w-screen snap-y snap-mandatory bg-primary-400 scrollbar-hide sm:w-full;
 }
 
 .root {
@@ -36,7 +36,7 @@ body {
 }
 
 .thumbs-wrapper {
-  @apply !my-1 !mx-0;
+  @apply !mx-0 !my-1;
 }
 
 @keyframes rotateAndFloat {

@@ -40,7 +40,7 @@ export const MobileNavbar = () => {
     >
       <motion.div variants={sidebar} />
 
-      <div className="flex justify-between h-8 m-2">
+      <div className="m-2  flex h-8 justify-between">
         <img src="logo_nav.png" alt="PERCEPTRON" className="font-krona" />
         <MenuToggle toggle={() => toggleOpen()} />
       </div>

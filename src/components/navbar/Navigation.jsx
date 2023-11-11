@@ -16,7 +16,7 @@ export const Navigation = ({ toggle, isOpen }) => {
     <motion.ul
       transition={{ duration: 0.3 }}
       variants={variants}
-      className={`fixed top-12 right-1 h-[90%] w-[98%] mobile:left-0 mobile:w-[100vw] p-2 rounded-lg ${
+      className={`mobile:left-0 mobile:w-[100vw]  fixed right-1 top-12 h-[90%] w-[98%] rounded-lg p-2 ${
         isOpen ? "bg-primary-400 bg-opacity-80" : "hidden"
       } `}
     >

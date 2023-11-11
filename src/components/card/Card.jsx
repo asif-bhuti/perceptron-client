@@ -4,9 +4,9 @@ import { PopUp } from "../anim/PopUp";
 export const Card = ({ children }) => {
   return (
     <PopUp scale={0.05} className={"sm:h-full"}>
-      <div className="group w-[340px] sm:w-full h-[200px] sm:h-full p-0.5 rounded-lg bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan border-none transition-all ease-in-out">
-        <div className="bg-primary-400 w-full h-full rounded-lg p-1 ">
-          <div className=" w-full h-full p-4 rounded-md group-hover:bg-gradient-to-tr from-[#a525fe] via-[#5e7dfe] to-secondary-cyan">
+      <div className="group h-[200px] w-[340px] rounded-lg border-none bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan p-0.5 transition-all ease-in-out sm:h-full sm:w-full">
+        <div className="h-full w-full rounded-lg bg-primary-400 p-1 ">
+          <div className=" h-full w-full rounded-md from-[#a525fe] via-[#5e7dfe] to-secondary-cyan p-4 group-hover:bg-gradient-to-tr">
             {children}
           </div>
         </div>

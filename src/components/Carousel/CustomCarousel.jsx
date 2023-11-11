@@ -15,7 +15,7 @@ export const CustomCarousel = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row sm:h-full w-screen p-4">
+    <div className="flex w-screen flex-col p-4 sm:h-full sm:flex-row">
       <>
         <SlideIn direction={"left"} className={"w-full"}>
           <Carousel
@@ -27,17 +27,17 @@ export const CustomCarousel = () => {
             transitionTime={1000}
             interval={4000}
             onChange={handleSlideChange}
-            className="sm:w-[880px] 3xl:w-[1400px] sm:h-full w-full sm:mr-8 mb-6"
+            className="mb-6 w-full sm:mr-8 sm:h-full sm:w-[880px] 3xl:w-[1400px]"
           >
             {slides.map((slide) => (
               <div
                 key={slide.id}
-                className="inline-flex items-center justify-center p-1 sm:h-full sm:w-[880px] 3xl:w-[1400px] h-[250px] w-full bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan rounded-xl"
+                className="inline-flex h-[250px] w-full items-center justify-center rounded-xl bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan p-1 sm:h-full sm:w-[880px] 3xl:w-[1400px]"
               >
                 <img
                   src={slide.image}
                   alt={slide.alt}
-                  className="rounded-xl object-cover h-full w-full"
+                  className="h-full w-full rounded-xl object-cover"
                 />
               </div>
             ))}
@@ -46,25 +46,25 @@ export const CustomCarousel = () => {
       </>
 
       <>
-        <SlideIn className={"flex flex-col h-[60%] sm:h-[80%]"}>
+        <SlideIn className={"flex h-[60%] flex-col sm:h-[80%]"}>
           <section className="sm:h-[50%] 3xl:h-[40%]">
             <Text
               variant="heading"
-              className={"sm:text-3xl text-2xl 2xl:text-4xl mb-2"}
+              className={"mb-2 text-2xl sm:text-3xl 2xl:text-4xl"}
             >
               {slides[currentSlide].title}
             </Text>
             <Text
               variant="title"
               className={
-                " text-white font-thin sm:text-base text-base w-full sm:w-[80%] text-justify 2xl:text-2xl"
+                " w-full text-justify text-base font-thin text-white sm:w-[80%] sm:text-base 2xl:text-2xl"
               }
             >
               {slides[currentSlide].description}
             </Text>
           </section>
           <section className="mb-4">
-            <div className="flex gap-4 mb-4">
+            <div className="mb-4 flex gap-4">
               <StatCard
                 count={slides[currentSlide].days}
                 text="Days Delivery"

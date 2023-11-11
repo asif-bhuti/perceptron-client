@@ -32,7 +32,7 @@ export const Home = () => {
         <Icon
           size={size}
           color={color}
-          className="hover:cursor-pointer hover:scale-110 transition-all ease-in duration-75"
+          className="transition-all duration-75 ease-in hover:scale-110 hover:cursor-pointer"
         />
       </a>
     </motion.div>
@@ -40,7 +40,7 @@ export const Home = () => {
 
   return (
     <div className="section" id="home">
-      <div className="flex flex-col w-full">
+      <div className="flex  w-full flex-col">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}

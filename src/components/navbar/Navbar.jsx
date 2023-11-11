@@ -25,20 +25,20 @@ export const Navbar = () => {
   return (
     <>
       {!isNavbarVisible ? (
-        <div className="z-50 relative">
+        <div className="relative z-50">
           <MobileNavbar />
         </div>
       ) : (
-        <nav className={`z-10 relative px-4 py-2`}>
-          <div className="flex justify-between items-center">
+        <nav className={`relative  z-10 px-4 py-2`}>
+          <div className="flex items-center justify-between">
             <Link to="home" smooth={true}>
               <img
                 src="logo_nav.png"
                 alt="PERCEPTRON"
-                className="font-krona text-primary-100 text-[20px] h-8 cursor-pointer"
+                className="h-8 cursor-pointer font-krona text-[20px] text-primary-100"
               />
             </Link>
-            <ul className="flex justify-end w-1/2 items-center ">
+            <ul className="flex w-1/2 items-center justify-end ">
               <Link to={"home"} smooth={true} className="nav-link-container">
                 <span className="relative">Home</span>
               </Link>

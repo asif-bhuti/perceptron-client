@@ -6,7 +6,7 @@ import { AiOutlineMobile } from "react-icons/ai";
 
 export const Services = () => {
   return (
-    <section className="section justify-start items-start" id="services">
+    <section className="section  items-start justify-start" id="services">
       <div className="flex flex-col gap-2">
         <>
           <SlideIn delay={0.8}>
@@ -24,7 +24,7 @@ export const Services = () => {
             </Text>
           </SlideIn>
         </>
-        <div className="sm:grid sm:grid-cols-2 flex overflow-x-auto h-[435px] w-[360px] px-1 sm:w-full gap-4">
+        <div className="flex h-[435px] w-[360px] gap-4 overflow-x-auto px-1 sm:grid sm:w-full sm:grid-cols-2">
           <PopUp delay={0.1} className="sm:h-full">
             <Card>
               <InfoCard

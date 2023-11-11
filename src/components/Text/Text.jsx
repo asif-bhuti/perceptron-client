@@ -8,13 +8,13 @@ export const Text = ({ children, className, variant = "body" }) => {
       className={twMerge(
         clsx(
           variant === "body" &&
-            "font-lato text-primary-100 text-justify w-full text-base sm:text-lg 2xl:text-2xl",
+            "w-full text-justify font-lato text-base text-primary-100 sm:text-lg 2xl:text-2xl",
           variant === "title" &&
-            `font-montserrat pr-2 pb-2 mb-4 text-5xl sm:text-8xl 2xl:text-[6rem] font-bold bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan bg-clip-text text-transparent self-start text-start `,
+            `mb-4  self-start bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan bg-clip-text pb-2 pr-2 text-start font-montserrat text-5xl font-bold text-transparent sm:text-8xl 2xl:text-[6rem] `,
           variant === "heading" &&
-            `font-krona text-xl sm:text-4xl bg-gradient-to-r from-primary-200 via-primary-100 to-primary-200 bg-clip-text text-transparent self-start text-start`
+            `self-start bg-gradient-to-r from-primary-200 via-primary-100 to-primary-200 bg-clip-text text-start font-krona text-xl text-transparent sm:text-4xl`,
         ),
-        className
+        className,
       )}
     >
       {children}

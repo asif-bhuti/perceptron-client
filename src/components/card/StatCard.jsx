@@ -37,19 +37,19 @@ export const StatCard = ({ count = 100, text = "Days Deliver", percent }) => {
   return (
     <div
       ref={ref}
-      className="flex flex-col w-28 h-28 sm:w-36 sm:h-36 p-4 bg-white bg-opacity-20 rounded-md"
+      className="flex h-28 w-28 flex-col rounded-md bg-white bg-opacity-20 p-4 sm:h-36 sm:w-36"
     >
       <Text
         variant="heading"
         className={
-          "bg-gradient-to-r from-cyan-600 via-cyan-500  to-secondary-cyan bg-clip-text text-transparent text-lg"
+          "bg-gradient-to-r from-cyan-600 via-cyan-500  to-secondary-cyan bg-clip-text text-lg text-transparent"
         }
       >
         {animatedCount + (percent ? "%" : "")}
       </Text>
       <Text
         variant="title"
-        className={"font-normal text-sm sm:text-base 2xl:text-lg text-white"}
+        className={"text-sm font-normal text-white sm:text-base 2xl:text-lg"}
       >
         {text}
       </Text>

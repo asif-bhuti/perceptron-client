@@ -7,7 +7,7 @@ export const Floating = () => {
         animation: "rotateAndFloat 6s linear infinite",
         position: "fixed",
       }}
-      className="h-96 opacity-40 blur-[150px] fixed top-0 left-0 right-0 bottom-0 -z-50"
+      className="fixed bottom-0 left-0 right-0 top-0 -z-50 h-96 opacity-40 blur-[150px]"
     >
       <svg
         width="768"
