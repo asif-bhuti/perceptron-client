@@ -49,9 +49,7 @@ export const StatCard = ({ count = 100, text = "Days Deliver", percent }) => {
       </Text>
       <Text
         variant="title"
-        className={
-          "font-normal text-sm sm:text-base text-white mobile:text-sm 3xl:text-xl"
-        }
+        className={"font-normal text-sm sm:text-base 2xl:text-lg text-white"}
       >
         {text}
       </Text>
