@@ -5,7 +5,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 
 export const Contact = () => {
   return (
-    <div className={`section flex-col items-start pt-16`} id="contact">
+    <div className={`section flex-col items-start pt-8`} id="contact">
       <SlideIn direction={"left"} delay={0.1}>
         <Text
           variant="heading"
@@ -51,7 +51,7 @@ export const Contact = () => {
           </SlideIn>
         </div>
 
-        <div className=" flex flex-col gap-0 bg-gradient-to-tr from-primary-100 via-primary-200 to-primary-100 sm:h-[40%] sm:w-[40%] rounded-lg p-4 w-full h-full mt-4">
+        <div className=" flex flex-col gap-0 bg-gradient-to-tr from-primary-100 via-primary-200 to-primary-100 sm:w-[40%] rounded-lg p-4 sm:p-8 w-full h-fit mt-4">
           <Text
             variant="title"
             className={

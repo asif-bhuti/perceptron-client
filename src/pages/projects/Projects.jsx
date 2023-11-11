@@ -3,8 +3,8 @@ import { CustomCarousel, Text } from "../../components";
 
 export const Projects = () => {
   return (
-    <div className="section flex-col bg-green-400" id="projects">
-      <Text variant="heading" className={"text-4xl mb-8 "}>
+    <div className="section flex-col " id="projects">
+      <Text variant="heading" className={"text-4xl sm:mb-8 "}>
         Our Projects
       </Text>
       <CustomCarousel />
