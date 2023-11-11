@@ -15,9 +15,9 @@ export const CustomCarousel = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row sm:h-full">
+    <div className="flex flex-col sm:flex-row sm:h-full w-screen p-4">
       <>
-        <SlideIn direction={"left"}>
+        <SlideIn direction={"left"} className={"w-full"}>
           <Carousel
             showArrows={true}
             showStatus={false}
@@ -27,12 +27,12 @@ export const CustomCarousel = () => {
             transitionTime={1000}
             interval={4000}
             onChange={handleSlideChange}
-            className="sm:w-[880px] 2xl:w-[1400px] sm:h-full w-[95vw] sm:mr-8 mb-6"
+            className="sm:w-[880px] 3xl:w-[1400px] sm:h-full w-full sm:mr-8 mb-6"
           >
             {slides.map((slide) => (
               <div
                 key={slide.id}
-                className="inline-flex items-center justify-center p-1 sm:h-full sm:w-[880px] 2xl:w-[1400px] h-[250px] w-[95vw] bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan rounded-xl"
+                className="inline-flex items-center justify-center p-1 sm:h-full sm:w-[880px] 3xl:w-[1400px] h-[250px] w-full bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan rounded-xl"
               >
                 <img
                   src={slide.image}
@@ -57,7 +57,7 @@ export const CustomCarousel = () => {
             <Text
               variant="title"
               className={
-                " text-white font-thin sm:text-lg text-base w-[96%] 2xl:text-3xl"
+                " text-white font-thin sm:text-base text-base w-full sm:w-[80%] text-justify 2xl:text-2xl"
               }
             >
               {slides[currentSlide].description}
