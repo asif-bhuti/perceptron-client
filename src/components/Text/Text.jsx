@@ -8,7 +8,7 @@ export const Text = ({ children, className, variant = "body" }) => {
       className={twMerge(
         clsx(
           variant === "body" &&
-            "font-lato text-primary-100 text-justify w-full",
+            "font-lato text-primary-100 text-justify w-full text-base sm:text-lg 2xl:text-2xl",
           variant === "title" &&
             `font-montserrat pr-2 pb-2 mb-4 text-5xl sm:text-8xl 2xl:text-[6rem] font-bold bg-gradient-to-r from-secondary-pink via-secondary-purple to-secondary-cyan bg-clip-text text-transparent self-start text-start `,
           variant === "heading" &&
