@@ -39,26 +39,24 @@ export const Home = () => {
   );
 
   return (
-    <div className=" m-8 mobile:m-2 section" id="home">
-      <div className="flex flex-col">
+    <div className="section" id="home">
+      <div className="flex flex-col w-full">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col"
         >
-          <Text variant="heading" className={"3xl:text-4xl"}>
-            We Are Solution Oriented
-          </Text>
+          <Text variant="heading">We Are Solution Oriented</Text>
           <Text variant="title">Tech Agency</Text>
-          <Text>
+          <Text className={"md:w-1/2"}>
             Empowering businesses with innovative web and mobile app solutions
             for the digital age. We craft cutting-edge web and mobile
             applications to drive your digital success.
           </Text>
         </motion.div>
         <span className="my-4"></span>
-        <div className="flex">
+        <>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -72,12 +70,13 @@ export const Home = () => {
                 restDelta: 0.001,
               },
             }}
+            className="flex gap-2"
           >
-            <Button variant={"primary"}>Hire Us!</Button>
+            <Button>Hire Us!</Button>
 
-            <Button>How We Work</Button>
+            <Button variant={"secondary"}>How We Work</Button>
           </motion.div>
-        </div>
+        </>
         <span className="my-2"></span>
         <div className="flex gap-2">
           {socialMediaIcons.map((item, index) => (
