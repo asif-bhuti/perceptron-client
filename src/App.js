@@ -20,11 +20,8 @@ function App() {
           <DotConnector />
           <Home />
           <Services /> <Projects />
-          {/* 
-          
-          
-         
           <Contact />
+          {/*
           <Footer /> */}
         </>
       )}

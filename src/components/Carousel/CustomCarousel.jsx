@@ -47,7 +47,7 @@ export const CustomCarousel = () => {
 
       <>
         <SlideIn className={"flex flex-col h-[60%] sm:h-[80%]"}>
-          <section className="h-[80%] sm:h-[50%] 3xl:h-[40%]">
+          <section className="sm:h-[50%] 3xl:h-[40%]">
             <Text
               variant="heading"
               className={"sm:text-3xl text-2xl 2xl:text-4xl mb-2"}
